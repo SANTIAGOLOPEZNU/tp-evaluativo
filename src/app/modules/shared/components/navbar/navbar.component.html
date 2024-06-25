@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<mat-toolbar>
+    <span>My Application</span>
+
+    <span class="example-spacer"></span>
+
+    <div >
+        <button mat-button routerLink="/inicio">Inicio</button>
+
+        <button mat-button routerLink="">Productos</button>
+
+        <button mat-button routerLink="">Nosotros</button>
+    </div>
+    
+    <span class="example-spacer"></span>
+
+    <!--inicio de sesion  el registro de un nuevo usuario-->
+    <div >
+        <button mat-button routerLink="/iniciar-sesion">iniciar sesion</button>
+
+        <button mat-button routerLink="/registrarse">registrarse</button>
+    </div>
+    
+    <!--botones con iconos-->
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+    </button>
+</mat-toolbar>
