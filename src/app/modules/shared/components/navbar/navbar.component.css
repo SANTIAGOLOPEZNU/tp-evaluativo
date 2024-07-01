@@ -1,3 +1,69 @@
-.example-spacer{
-    flex: 1 1 auto;
+@media (min-width: 300px) and (max-width: 700px){
+    mat-toolbar{
+        background-color: black;
+    }
+
+    #menuproductos{
+        display: none;
+    }
+
+    #navbar{
+        
+    }
+
+    #buscador{
+        display: none;
+    }
 }
+
+@media (min-width: 700px){
+    mat-toolbar{
+        background-color: black;
+    }
+
+    #menusecciones{
+        display: none;
+    }
+
+    #buscadordesplegable{
+        display: none;
+    }
+}
+
+.fila1{
+    background-color: black;
+    height: 70px;
+    align-items: center;
+}
+
+#buscadordesplegable{
+    text-align: right;
+}
+
+.inputbuscadordesplegable{
+    width: 150px;
+}
+
+.botonbuscadordesplegable{
+    width: 50px;
+}
+
+.inputbuscador{
+    width: 400px;
+}
+.iconos{
+    text-align: right;
+}
+.fila2{
+    height: 40px;
+    background-color: gray;
+    align-items: center;
+    text-align: center;
+}
+.botonmenu{
+    text-align: left;
+}
+.col{
+    color: white;
+}
+

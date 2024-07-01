@@ -1,0 +1,35 @@
+@media (min-width: 300px) and (max-width: 700px){
+    #contenedor{
+        height: auto;
+        width: 200px;
+    }
+    #imagen{    
+        height: auto;
+        width: 100%;
+    }
+    #botonagregar{
+        display: none;
+    }
+    #contenedor{
+        width: 18rem;
+    }
+
+}
+
+@media (min-width: 700px){
+    #botonagregardesplegable{
+        display: none;
+    }
+    #contenedor{
+        width: 15rem;
+    }
+}
+
+/* #contenedor{
+    width: 18rem;
+} */
+
+.botones{
+    text-align: center;
+    align-items: center;
+}

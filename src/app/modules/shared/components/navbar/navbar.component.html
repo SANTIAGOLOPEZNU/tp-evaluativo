@@ -1,27 +1,96 @@
-<mat-toolbar>
-    <span>My Application</span>
+<mat-toolbar class="container-fluid" id="navbar" style="height: auto;">
+    <div class="col">
+        <div class="row fila1">
 
-    <span class="example-spacer"></span>
+            <div class="col logo">
+                LOGO
+            </div>
 
-    <div >
-        <button mat-button routerLink="/inicio">Inicio</button>
+            <div class="col">
 
-        <button mat-button routerLink="">Productos</button>
+                <!--buscador despligable cuando se visualize en dispositivos mobiles-->
+                <div id="buscadordesplegable">
+                    <button [matMenuTriggerFor]="buscar" mat-icon-button class="example-icon"
+                        aria-label="Example icon-button with menu icon">
+                        <mat-icon>search</mat-icon>
+                    </button>
+                    <mat-menu #buscar="matMenu">
+                        <input class="form-control me-2 inputbuscadordesplegable" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success botonbuscadordesplegable"
+                            type="submit"><mat-icon>search</mat-icon></button>
+                    </mat-menu>
+                </div>
 
-        <button mat-button routerLink="">Nosotros</button>
+                <!--buscador normal cuando se vizualize en dispositivos mas grandes-->
+                <div id="buscador">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 inputbuscador" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col iconos">
+                <button mat-icon-button class="example-icon favorite-icon"
+                    aria-label="Example icon-button with heart icon">
+                    <mat-icon>person</mat-icon>
+                </button>
+                <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+                    <mat-icon>shopping_cart</mat-icon>
+                </button>
+            </div>
+        </div>
+        <div class="row fila2">
+            <div class="col botonmenu" id="menusecciones">
+                <button [matMenuTriggerFor]="producto" mat-icon-button class="example-icon"
+                    aria-label="Example icon-button with menu icon">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </div>
+            <mat-menu #producto="matMenu">
+                <button mat-menu-item routerLink="/producto">
+                    <div class="col">
+                        <button mat-button routerLink="">Pc Armadas</button>
+                    </div>
+                </button>
+                <button mat-menu-item routerLink="/rareza">
+                    <div class="col">
+                        <button mat-button routerLink="">Hardware</button>
+                    </div>
+                </button>
+                <button mat-menu-item routerLink="/tienda">
+                    <div class="col">
+                        <button mat-button routerLink="">Perifericos</button>
+                    </div>
+                </button>
+                <button mat-menu-item routerLink="/tipo">
+                    <div class="col">
+                        <button mat-button routerLink="">Notebooks</button>
+                    </div>
+                </button>
+            </mat-menu>
+
+            <div class="col" id="menuproductos">
+                <div class="row">
+                    <div class="col">
+                        <button mat-button routerLink="">Pc Armadas</button>
+                    </div>
+                    <div class="col">
+                        <button mat-button routerLink="">Hardware</button>
+                    </div>
+                    <div class="col">
+                        <button mat-button routerLink="">Perifericos</button>
+                    </div>
+                    <div class="col">
+                        <button mat-button routerLink="">Notebooks</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-    
-    <span class="example-spacer"></span>
 
-    <!--inicio de sesion  el registro de un nuevo usuario-->
-    <div >
-        <button mat-button routerLink="/iniciar-sesion">iniciar sesion</button>
-
-        <button mat-button routerLink="/registrarse">registrarse</button>
-    </div>
-    
-    <!--botones con iconos-->
-    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
-        <mat-icon>favorite</mat-icon>
-    </button>
 </mat-toolbar>

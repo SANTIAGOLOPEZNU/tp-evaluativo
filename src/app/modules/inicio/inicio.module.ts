@@ -2,16 +2,24 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { InicioRoutingModule } from './inicio-routing.module';
-import { InicioComponent } from './components/inicio/inicio.component';
+import { InicioComponent } from './pages/inicio/inicio.component';
+import { CardsComponent } from './components/cards/cards.component';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+
+
 
 
 @NgModule({
   declarations: [
-    InicioComponent
+    InicioComponent,
+    CardsComponent
   ],
   imports: [
     CommonModule,
-    InicioRoutingModule
+    InicioRoutingModule,
+    MatIconModule,
+    MatButtonModule
   ],
   exports:[
     InicioComponent
