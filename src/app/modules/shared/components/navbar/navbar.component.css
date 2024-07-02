@@ -1,14 +1,10 @@
 @media (min-width: 300px) and (max-width: 700px){
     mat-toolbar{
-        background-color: black;
+        background-color: #0046BE;
     }
 
     #menuproductos{
         display: none;
-    }
-
-    #navbar{
-        
     }
 
     #buscador{
@@ -18,7 +14,7 @@
 
 @media (min-width: 700px){
     mat-toolbar{
-        background-color: black;
+        background-color: #0046BE;
     }
 
     #menusecciones{
@@ -31,7 +27,7 @@
 }
 
 .fila1{
-    background-color: black;
+    background-color: #0046BE;
     height: 70px;
     align-items: center;
 }
@@ -56,7 +52,7 @@
 }
 .fila2{
     height: 40px;
-    background-color: gray;
+    background-color: #013196;
     align-items: center;
     text-align: center;
 }

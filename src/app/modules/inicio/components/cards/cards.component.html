@@ -1,19 +1,31 @@
-<div class="card" id="contenedor" >
-    <div></div>
-    <img id="imagen" src="./assets/notebook1.jpg" class="card-img-top" alt="imagen">
-
-    <div class="card-body" id="propiedades">
-        <h5 class="card-title">NOTEBOOK HP 15.6"" VICTUS RYZEN 5 7535HS 8GB 512GB RTX 2050 FHD W11 15-FB1013DX</h5>
-
-        <p class="card-text">$1.113.999</p>
-        
-        <div class="botones">
-            <div id="botonagregar">
-                <button mat-stroked-button><mat-icon>shopping_cart</mat-icon>Agregar</button>
+<div class="container-fluid" id="contenedorgeneral">
+    <div id="texto">
+        <p>Productos Destacados</p>
+    </div>
+    <div class="row">
+        <div class="card" id="contenedor" *ngFor="let pedructo of productosdestacados">
+            <div class="imagenes">
+                <img id="imagen" src="{{pedructo.imagen}}" class="card-img-top" alt="imagen">
             </div>
-    
-            <div id="botonagregardesplegable">
-                <button mat-stroked-button><mat-icon>shopping_cart</mat-icon></button>
+
+            <div class="card-body">
+                <div class="nombres">
+                    <h5 class="card-title">{{pedructo.nombre}}</h5>
+                </div>
+
+                <div class="precios">
+                    <p class="card-text">${{pedructo.precio}}</p>
+                </div>
+                
+                <div class="botones">
+                    <div id="botonagregar">
+                        <button class="boton" mat-stroked-button><mat-icon>shopping_cart</mat-icon>Agregar</button>
+                    </div>
+
+                    <div id="botonagregardesplegable">
+                        <button class="boton" mat-stroked-button><mat-icon>shopping_cart</mat-icon></button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

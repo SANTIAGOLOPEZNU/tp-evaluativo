@@ -6,6 +6,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { CardsComponent } from './components/cards/cards.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 
 
@@ -13,7 +14,8 @@ import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     InicioComponent,
-    CardsComponent
+    CardsComponent,
+    CarouselComponent
   ],
   imports: [
     CommonModule,
